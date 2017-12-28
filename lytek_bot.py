@@ -14,18 +14,7 @@ async def on_ready():
     print("Ready when you are xD")
     print ("I am running on " + bot.user.name)  
     print ("With the ID: "+ bot.user.id)
-@bot.event
-async def on_message(message):
-    if message.content == "cookie":
-        await bot.send_message(message.chanel, ":cookie:")
-    if message.content.upper().startswith("$SAY"):
-        args = message.content.split(" ")
-        await bot.send_message (message.channel, "{}".format(" ".join(args[1:])))
 
-@bot.command(pass_context = True) #Creates a command
-async def ping(ctx):
-    await bot.say(":ping_pong: ping!! xSSS") #After the command is given it will answer this
-    print ('User has pinged')
 
 @bot.command(pass_context = True)
 async def info (ctx, user: discord.Member):
@@ -37,6 +26,7 @@ async def info (ctx, user: discord.Member):
     embed.add_field(name ="Joined", value = user.joined_at, inline = True)
     embed.set_thumbnail(url = user.avatar_url)
     await bot.say(embed = embed)
+
 
 @bot.command(pass_context = True)
 async def kick(ctx, user: discord.Member):
