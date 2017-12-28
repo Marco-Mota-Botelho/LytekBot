@@ -44,4 +44,4 @@ async def embed(ctx):
 
 
 
-bot.run('Mzk0OTYzNzIzMzc2Mzk0MjQw.DSSjfA.kZAWFfyMYm8pO3mVtxjQEAxKa8k')
+bot.run('Mzk0OTYzNzIzMzc2Mzk0MjQw.DSSjfA.kZAWFfyMYm8pO3mVtxjQEAxKa8k')# Token to run bot, we may need to change it.
